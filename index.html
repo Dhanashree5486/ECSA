@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+
+    
+    
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 100px;
+  overflow: hidden;
+}
+.right {
+  
+  float: left;
+  width: 40%;
+  padding: 10px 55px;
+  margin-top: 7px;
+}
+
+.feature0 {
+  float: left;
+  width: 100%;
+  height: 20%;
+  padding: 0 100px;
+  overflow: hidden;
+}
+
+.feature1 {
+  float: left;
+  width: 35%;
+  padding: 0 100px;
+  overflow: hidden;
+}
+
+.feature2 {
+  float: left;
+  width: 30%;
+  padding: 0 100px;
+  overflow: hidden;
+}
+
+.feature3 {
+  float: left;
+  width: 35%;
+  padding: 0 100px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width:1000px) {
+  /* For tablets: */
+  .main {
+    width: 90%;
+    padding: 100;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:800px) {
+  /* For mobile phones: */
+  .menu, .main, .right, .feature1, .feature2, .feature3{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #273539;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #eff0eb}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+.container2 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card2 {
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: left;
+  border-radius: 40px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ 
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+.imgSlider{
+            
+            width: 100%;
+            height: 60%;
+            background-image: url('banner1.jpeg');
+            animation: changeImage 10s linear infinite;
+            overflow-x: hidden;
+        }
+        @keyframes changeImage {
+               0%{
+                background-image: url('banner1.jpeg');
+               }
+               25%{
+                background-image: url('banner2.jpeg');
+               }
+               50%{
+                background-image: url('banner3.jpeg');
+               }
+               75%{
+                background-image: url('banner4.jpeg');
+               }
+               100%{
+                background-image: url('banner5.jpeg');
+               }
+        }
+
+        
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+</style>
+</head>
+<body style="font-family:Verdana; background-color: #ffffff;">
+
+
+<div style="padding-left: 5%; padding-top: 35%;background-color:#c483e5;padding:15px;">
+      <h1 style="align:centre">CHASE THE CODE</h1>
+</div>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+<!-- Example Code -->
+    
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding-top: 2%; padding-left: 2%; padding-right: 2%;">
+  <!-- <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol> -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="banner1.jpeg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="banner2.jpeg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="banner3.jpeg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="banner4.jpeg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="banner5.jpeg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="banner6.jpeg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="banner7.jpeg" alt="Third slide">
+    </div>
+   
+    
+    
+
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!-- End Example Code -->
+
+
+<div style="padding-left: 5%; padding-top: 0%;">
+  <h2><br>About This Course</h2>
+<p>
+  This specialization teaches the fundamentals of programming in Python 3. We will begin at the beginning, with variables, conditionals, and loops, and get to some intermediate material like keyword parameters, list comprehensions, lambda expressions, and class inheritance. You will have lots of opportunities to practice. You will also learn ways to reason about program execution, so that it is no longer mysterious and you are able to debug programs when they don’t work. By the end of the specialization, you’ll be writing programs that query Internet APIs for data and extract useful information from them. And you’ll be able to learn to use new modules and APIs on your own by reading the documentation. That will give you a great launch toward being an independent Python programmer. This specialization is a good next step for you if you have completed Python for Everybody but want a more in-depth treatment of Python fundamentals and more practice, so that you can proceed with confidence to specializations like Applied Data Science with Python. But it is also appropriate as a first set of courses in Python if you are already familiar with some other programming language, or if you are up for the challenge of diving in head-first.  
+</p>
+</div>
+
+<!--------------------------------------------------------------------------------->
+<div style="overflow:auto ; padding-top: 2%; padding-right: 2%;" >
+<div class="main" style="overflow:auto ; padding-left: 15%; padding-top: 2%; padding-right: 5%;">
+  
+  <div class="card2" class="oval" style="background-color: #ecdcfa;">
+    <h2 style="padding-left: 20%; padding-top: 5%; ">Skills You Learn</h2>
+    <ul style="padding-left: 15%; padding-top: 5%; padding-bottom: 7%;"><li>Variables, data types, and operators in C.</li>
+    <li>> File handling and command line arguments.</li>
+    <li>> Arrays and character array in C.</li>
+    <li>> Pointers and linked lists.</li>
+    <li>> String handling functions.</li>
+    <li>> Stacks and queues data structure in C language.</li>
+    <li>> Study the code of other developers</li>
+    <li>> Complete open source projects.</li>
+    <li>> Enhance your learning strategy.</li>
+  <li>> Able to solve coding challenge.</li>
+
+  </ul>
+  </div>
+ 
+
+</div>
+<div class="right" style="overflow:auto ; padding-left: 5%; padding-top: 2%; padding-right: 15%;">
+  <img src="cLogo.png" alt="Avatar" style="width:100%;height: 50%; align:centre;">
+</div>
+
+
+</div>
+
+
+
+<!------------------------------------------------------------------------>
+<!--Features section-->
+
+<div style="overflow:auto ; padding-top: 5%; padding-right: 5%; padding-left: 5%;" >
+  <h3 style="align-self: auto; padding-left: 40%;">Course Features</h3>
+  <div class="feature1" style=" padding-top: 2%; padding-right: 1%;">
+    <div class="container2">
+      <img src="background.jfif"  alt="Snow" style="width:100%; height: 100%;">
+      <div class="centered"><h5>Shareable Certificate Earn a Certificate upon completion</p></div>
+    </div>
+  </div>
+
+  
+  <div class="feature2" style="padding-left: 2%; padding-top: 2%; padding-right: 2%;">
+    <div class="container2">
+      <img src="background.jfif" alt="Snow" style="width:100%; height: 100%;">
+      <div class="centered"><h5>Flexible Schedule Set and maintain flexible deadlines.</p></div>
+    </div>
+  </div>
+
+  <div class="feature3" style=" padding-left: 1%; padding-top: 2%;">
+    <div class="container2">
+      <img src="background.jfif" alt="Snow" style="width:100%; height: 100%;">
+      <div class="centered"><h5>Beginner Level No prior experience required.</p></div>
+    </div>
+  </div>
+</div>
+
+
+<div style="overflow:auto ; padding-top: 1%; padding-right: 5%; padding-left: 5%;" >
+  <div class="feature1" style=" padding-top: 2%; padding-right: 1%;">
+    <div class="container2">
+      <img src="background.jfif"  alt="Snow" style="width:100%; height: 100%;">
+      <div class="centered"><h5>100% online courses Start instantly learn at your own schedule.</p></div>
+    </div>
+  </div>
+
+  <div class="feature2" style="padding-left: 2%; padding-top: 2%; padding-right: 2%;">
+    <div class="container2">
+      <img src="background.jfif" alt="Snow" style="width:100%; height: 100%;">
+      <div class="centered"><h5>Approx. 5 months to complete Suggested 4 hours/week</p></div>
+    </div>
+  </div>
+
+  <div class="feature3" style=" padding-left: 1%; padding-top: 2%;">
+    <div class="container2">
+      <img src="background.jfif" alt="Snow" style="width:100%; height: 100%;">
+      <div class="centered"><h5>Learn in your native languages (English/Hindi/Marathi)</p></div>
+    </div>
+  </div>
+</div>
+
+<!------------------------------------------------------------------->
+<!--Certificate section-->
+<div style="overflow:auto ; padding-top: 2%; padding-right: 5%;" >
+  <div class="main" style="overflow:auto ; padding-left: 15%; padding-top: 2%; padding-right: 5%;">
+    <h3>You will get certificate:</h3>
+    <img src="certificate.png" alt="Avatar" style="width:100%; align:centre;">
+  </div>
+
+  <div class="right" style="overflow:auto ; padding-left: 5%; padding-top: 5%; padding-right: 15%;">
+    <div class="card">
+      <img src="shruti.jpg" alt="Avatar" style="width:100%; align:centre;">
+      <div class="container">
+        <h4 style="align:centre"><b>Dhanashree Kadam</b></h4>
+        <p>Instructor</p>
+        <p>CHASE THE CODE</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!---------------------------------------------------->
+<!--------------------------------------------------------------------->
+<div  style="overflow:auto ; padding-left: 5%; padding-top: 5%; padding-right: 10%;">
+<h3>FAQs on C Programming Language Course Details</h3>
+<h4>1. What is C used for?</h4>
+<p>C language is a high-level computer programming language that was developed to perform system programming for the operating system like UNIX. It is an imperative and procedural language, which means people can write their programs as a series of step-by-step instructions.</p>
+<h4>2. Is C language easy to learn?</h4>
+<p>C is one of the easiest languages to learn among all. It is a very simple and easy language to understand but the only thing you should know is some basic knowledge and how to use the standard library functions while coding in C language.</p>
+<h4>3. What is the difference between C and C++?</h4>
+<p>The major difference between C and C++ is that C is a procedural programming language and won’t support object-oriented languages like classes and objects, whereas C++ is a combination of both procedural and object-oriented programming language, so it is also known as a hybrid language.</p>
+</div>
+
+
+   <!--Footer-->
+   <footer class="footer">
+    <div class="container1">
+      
+      <h1>Thank You For Visiting Our Website...</h1>
+        
+        
+      </div>
+  </footer>
+  <!--footer end-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
+
